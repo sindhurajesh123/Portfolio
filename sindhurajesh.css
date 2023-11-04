@@ -117,6 +117,7 @@ img{
    height: 500px;
 border-radius: 50%;
 overflow: hidden;
+border: 3px solid white;
 
 }
 @media screen and (max-width: 576px) {
@@ -217,15 +218,19 @@ margin: 20px 0px 40px 0px;
       gap:1.5rem
    }
    .about-img img{
-      padding-bottom: 20%;
+      padding-bottom: 10%;
       max-width:630px;
       height:auto;
       width:100%;
       border-radius: 8px;
+      margin: 10px;
+      border:2px solid white;
+     
    }
    .about-text h2{
       font-size: 60px;
       color: black;
+      margin: 15px;
    }
    .about-text h2 span{
       color: aqua;
@@ -249,7 +254,15 @@ margin: 20px 0px 40px 0px;
       line-height:1.4;
       margin-bottom: 4rem;
    }
-
+   .about-img img {
+      padding-bottom: 10%; /* Adjust the padding as needed */
+      max-width: 100%; /* Make the image responsive to the container width */
+      width: auto; /* Allow the width to adjust proportionally */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 0;
+      float: right;
+      margin-right: 5px;
+   }
    /*project*/
    #project
    {
@@ -260,27 +273,78 @@ margin: 20px 0px 40px 0px;
    h1{
       color: white!important;
    }
-   .img-thumbnail{
-      width: 450px;
-      height: 350px;
-      padding-right: 50px;
-   }
+   .button-row{
+      display: flex;
+     justify-content: space-between;
+     align-items: center;
    
-   .btn-primary{
-      margin: 10px;
+  }
+  
    
-      margin-left: 150px;
-    width: 40%;
-    background: #a99baa!important;
-    color: #311432 !important; 
+      .button-link {
+         display:inline-block;
+         background-color:#a99baa;
+         padding: 10px  20px;
+         color: #311432 !important;
+       text-decoration: none;
+       text-align: center;
+         border:none;
+         border-radius: 5px;
+         
+     } 
    
-   }
-   .btn-sucesses{
-      margin-left: 300px;
-      width: 10%;
-    background: #a99baa!important;
-    color: #311432 !important;
-   }
+
+     .button-link img {
+       width: 400px;
+      height: auto; 
+      vertical-align: middle;
+      margin-right: 5px;
+       border :3px solid #311432 !important; 
+     
+     
+  }
+   @media (max-width: 576px) {
+      .button-row {
+         display: flex;
+         flex-direction: column; /* Stack items in a column */
+         align-items: center; /* Center items horizontally */
+       }
+     
+       .button-link {
+         display: inline-block;
+         background-color: #a99baa;
+      width: 400px;
+      
+         color: #311432 !important;
+         text-decoration: none;
+         text-align: center;
+         border: none;
+         border-radius: 5px;
+         margin: 10px 0;
+         
+       }
+     
+       .button-link img {
+         max-width: 100%; /* Make images responsive to the container width */
+         height: auto; /* Maintain aspect ratio */
+         vertical-align: middle;
+         margin-bottom: 50px; /* Add spacing between the image and button */
+         border: 3px solid #311432 !important;
+         justify-content: center;
+         float:right;
+         margin-right: 5px;
+       }
+     }
+    
+     
+     
+     
+     
+     
+    
+    
+    
+    
 
    
    /*skills section*/
